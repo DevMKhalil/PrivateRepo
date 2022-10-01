@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="RibbonForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\BankPayment\frmBankPaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\BankRecivement\frmBankRecivementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Bill\frmBillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Bill\frmBillSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Custom\frmProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Custom\frmProgressForm.Designer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\Invoice\frmInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Invoice\frmInvoiceSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\Material\frmMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\StoreDaily\frmStoreDailyFormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\StorePayment\frmStorePaymentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="UI\StoreRecivement\frmStoreRecivementFormNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="UI\Custom\frmProgressForm.resx">
+      <SubType>Code</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

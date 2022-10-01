@@ -3,3 +3,6 @@
 ################################################################################
 
 /MiniSalesApp/.vs
+/MiniSalesApp/MiniSalesApp/bin
+/MiniSalesApp/MiniSalesApp/obj/Release/net5.0-windows
+/MiniSalesApp/MiniSalesApp/obj
