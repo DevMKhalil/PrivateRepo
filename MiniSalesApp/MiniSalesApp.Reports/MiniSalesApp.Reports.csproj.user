@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="Items\ItemPrint\rptItemReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="Items\ItemReport\rptItemsReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+    <Compile Update="rptMasterReport.cs">
+      <SubType>XtraReport</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="Items\ItemPrint\dsItem.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Items\ItemReport\dsItems.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

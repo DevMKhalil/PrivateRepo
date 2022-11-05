@@ -21,6 +21,9 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\MiniSalesApp.Reports\MiniSalesApp.Reports.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Update="Messages.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

@@ -119,6 +119,9 @@
   <data name="accordionControl1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
+  <metadata name="accordionControlElement1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>-100, -100</value>
+  </metadata>
   <data name="accordionControlElement1.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14pt, style=Bold</value>
   </data>
@@ -134,11 +137,32 @@
   <data name="btnCustomer.Text" xml:space="preserve">
     <value>العملاء</value>
   </data>
+  <metadata name="btnSupplier.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>-100, -100</value>
+  </metadata>
   <data name="btnSupplier.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="btnSupplier.Text" xml:space="preserve">
     <value>الموردين</value>
+  </data>
+  <metadata name="accordionControlElement2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>-100, -100</value>
+  </metadata>
+  <data name="accordionControlElement2.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <metadata name="btnMaterialReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>-100, -100</value>
+  </metadata>
+  <data name="btnMaterialReport.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="btnMaterialReport.Text" xml:space="preserve">
+    <value>تقرير الاصناف</value>
+  </data>
+  <data name="accordionControlElement2.Text" xml:space="preserve">
+    <value>التقارير </value>
   </data>
   <data name="accordionControlElement1.Text" xml:space="preserve">
     <value>البيانات الرئيسيه </value>
@@ -152,9 +176,6 @@
   <data name="btnInvoice.Text" xml:space="preserve">
     <value>المبيعات</value>
   </data>
-  <metadata name="btnBill.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>-100, -100</value>
-  </metadata>
   <data name="btnBill.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
@@ -203,6 +224,9 @@
   <data name="btnBankRecivement.Text" xml:space="preserve">
     <value>استلام بنك</value>
   </data>
+  <metadata name="btnBankPayment.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>-100, -100</value>
+  </metadata>
   <data name="btnBankPayment.Appearance.Default.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
@@ -268,6 +292,12 @@
     <value>btnMaterial</value>
   </data>
   <data name="&gt;&gt;btnMaterial.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.AccordionControlElement, DevExpress.XtraBars.v22.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;btnMaterialReport.Name" xml:space="preserve">
+    <value>btnMaterialReport</value>
+  </data>
+  <data name="&gt;&gt;btnMaterialReport.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Navigation.AccordionControlElement, DevExpress.XtraBars.v22.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;btnCustomer.Name" xml:space="preserve">
@@ -346,6 +376,12 @@
     <value>btnBankPayment</value>
   </data>
   <data name="&gt;&gt;btnBankPayment.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.Navigation.AccordionControlElement, DevExpress.XtraBars.v22.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;accordionControlElement2.Name" xml:space="preserve">
+    <value>accordionControlElement2</value>
+  </data>
+  <data name="&gt;&gt;accordionControlElement2.Type" xml:space="preserve">
     <value>DevExpress.XtraBars.Navigation.AccordionControlElement, DevExpress.XtraBars.v22.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

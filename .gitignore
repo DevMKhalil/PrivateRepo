@@ -16,3 +16,5 @@
 /SQLHelper/SQLHelper/obj/Debug
 /.vs/PrivateRepo/v16
 /SQLHelper/.vs/SQLHelper/v16
+/MiniSalesApp/MiniSalesApp.Reports/obj
+/MiniSalesApp/MiniSalesApp.Reports/bin/Debug/net5.0-windows

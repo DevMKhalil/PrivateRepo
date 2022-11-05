@@ -27,6 +27,8 @@ namespace MiniSalesApp
 
             //System.Windows.Forms.Application.Run(new Form1(GetService<IMediator>()));
 
+            MiniSalesApp.Reports.Program.ConnectionString = Properties.Settings.Default.TempString;
+
             DevExpress.XtraEditors.WindowsFormsSettings.AllowRibbonFormGlass = DevExpress.Utils.DefaultBoolean.True;
             DevExpress.XtraEditors.WindowsFormsSettings.RightToLeft = DevExpress.Utils.DefaultBoolean.True;
             DevExpress.XtraEditors.WindowsFormsSettings.RightToLeftLayout = DevExpress.Utils.DefaultBoolean.True;

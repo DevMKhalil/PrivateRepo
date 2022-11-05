@@ -38,6 +38,7 @@ namespace MiniSalesApp.UI
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnMaterial = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnMaterialReport = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnCustomer = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnSupplier = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -51,6 +52,7 @@ namespace MiniSalesApp.UI
             this.btnBank = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnBankRecivement = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnBankPayment = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -106,7 +108,8 @@ namespace MiniSalesApp.UI
             this.accordionControlElement1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnMaterial,
             this.btnCustomer,
-            this.btnSupplier});
+            this.btnSupplier,
+            this.accordionControlElement2});
             this.accordionControlElement1.Expanded = true;
             this.accordionControlElement1.Name = "accordionControlElement1";
             resources.ApplyResources(this.accordionControlElement1, "accordionControlElement1");
@@ -119,6 +122,15 @@ namespace MiniSalesApp.UI
             this.btnMaterial.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             resources.ApplyResources(this.btnMaterial, "btnMaterial");
             this.btnMaterial.Click += new System.EventHandler(this.btnMaterial_Click);
+            // 
+            // btnMaterialReport
+            // 
+            this.btnMaterialReport.Appearance.Default.Font = ((System.Drawing.Font)(resources.GetObject("btnMaterialReport.Appearance.Default.Font")));
+            this.btnMaterialReport.Appearance.Default.Options.UseFont = true;
+            this.btnMaterialReport.Name = "btnMaterialReport";
+            this.btnMaterialReport.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            resources.ApplyResources(this.btnMaterialReport, "btnMaterialReport");
+            this.btnMaterialReport.Click += new System.EventHandler(this.btnMaterialReport_Click);
             // 
             // btnCustomer
             // 
@@ -245,6 +257,16 @@ namespace MiniSalesApp.UI
             resources.ApplyResources(this.btnBankPayment, "btnBankPayment");
             this.btnBankPayment.Click += new System.EventHandler(this.btnBankPayment_Click);
             // 
+            // accordionControlElement2
+            // 
+            this.accordionControlElement2.Appearance.Default.Font = ((System.Drawing.Font)(resources.GetObject("accordionControlElement2.Appearance.Default.Font")));
+            this.accordionControlElement2.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnMaterialReport});
+            this.accordionControlElement2.Expanded = true;
+            this.accordionControlElement2.Name = "accordionControlElement2";
+            resources.ApplyResources(this.accordionControlElement2, "accordionControlElement2");
+            // 
             // MainForm
             // 
             resources.ApplyResources(this, "$this");
@@ -288,5 +310,7 @@ namespace MiniSalesApp.UI
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnBank;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnBankRecivement;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnBankPayment;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnMaterialReport;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
     }
 }

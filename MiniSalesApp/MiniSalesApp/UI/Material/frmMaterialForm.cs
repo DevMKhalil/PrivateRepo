@@ -10,6 +10,7 @@ using MiniSalesApp.Application.Materials.Queries.GetMaterial;
 using MiniSalesApp.Application.Materials.Queries.SearchMaterial;
 using MiniSalesApp.Classes;
 using MiniSalesApp.UI.Custom;
+using MiniSalesApp.UI.Reports;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -50,6 +51,7 @@ namespace MiniSalesApp.UI.Material
             ribbonButtons.Add(new ModuleRibbonButton(brBtnReset, BtnType.Reset, "", "", new FormStates[] { FormStates.AddingNew, FormStates.Editing }));
             ribbonButtons.Add(new ModuleRibbonButton(brBtnSave, BtnType.Save, "", "", new FormStates[] { FormStates.AddingNew, FormStates.Editing }));
             ribbonButtons.Add(new ModuleRibbonButton(brBtnDelete, BtnType.Delete, "", "", new FormStates[] { FormStates.Editing }));
+            ribbonButtons.Add(new ModuleRibbonButton(brBtnPrint, BtnType.Print, "", "", new FormStates[] { FormStates.Editing }));
             currentState = FormStates.NormalFirstoaded;
             SetControlStatus(false);
             ClearControls();
@@ -289,6 +291,13 @@ namespace MiniSalesApp.UI.Material
         {
             if (e.NewValue != null && !string.IsNullOrEmpty(e.NewValue.ToString()) && e.NewValue.ToString().Contains("-"))
                 e.Cancel = true;
+        }
+
+        private void brBtnPrint_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            MiniSalesApp.Reports.Items.ItemPrint.rptItemReport itemReport = new MiniSalesApp.Reports.Items.ItemPrint.rptItemReport(material.MaterialId);
+            frmReportViewer reportViewer = new frmReportViewer(this.MdiParent, itemReport);
+            reportViewer.Show();
         }
     }
 }

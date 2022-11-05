@@ -74,6 +74,7 @@ namespace MiniSalesApp.UI.Material
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.brBtnPrint = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -120,14 +121,16 @@ namespace MiniSalesApp.UI.Material
             this.brBtnNew,
             this.brBtnSave,
             this.brBtnDelete,
-            this.brBtnReset});
+            this.brBtnReset,
+            this.brBtnPrint});
             resources.ApplyResources(this.ribbon, "ribbon");
-            this.ribbon.MaxItemId = 5;
+            this.ribbon.MaxItemId = 6;
             this.ribbon.Name = "ribbon";
             this.ribbon.QuickToolbarItemLinks.Add(this.brBtnNew);
             this.ribbon.QuickToolbarItemLinks.Add(this.brBtnSave);
             this.ribbon.QuickToolbarItemLinks.Add(this.brBtnDelete);
             this.ribbon.QuickToolbarItemLinks.Add(this.brBtnReset);
+            this.ribbon.QuickToolbarItemLinks.Add(this.brBtnPrint);
             this.ribbon.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
@@ -557,6 +560,15 @@ namespace MiniSalesApp.UI.Material
             this.emptySpaceItem1.Size = new System.Drawing.Size(453, 118);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // brBtnPrint
+            // 
+            resources.ApplyResources(this.brBtnPrint, "brBtnPrint");
+            this.brBtnPrint.Id = 5;
+            this.brBtnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.brBtnPrint.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.brBtnPrint.Name = "brBtnPrint";
+            this.brBtnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.brBtnPrint_ItemClick);
+            // 
             // frmMaterialForm
             // 
             resources.ApplyResources(this, "$this");
@@ -655,5 +667,6 @@ namespace MiniSalesApp.UI.Material
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem11;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem12;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
+        private DevExpress.XtraBars.BarButtonItem brBtnPrint;
     }
 }

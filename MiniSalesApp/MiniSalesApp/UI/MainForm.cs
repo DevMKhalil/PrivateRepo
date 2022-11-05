@@ -20,6 +20,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MiniSalesApp.UI.Bill;
+using MiniSalesApp.UI.Reports;
+using MiniSalesApp.UI.Material.Reports;
 
 namespace MiniSalesApp.UI
 {
@@ -309,6 +311,13 @@ namespace MiniSalesApp.UI
         private void billForm_Disposed(object sender, EventArgs e)
         {
             billForm = null;
+        }
+
+        private void btnMaterialReport_Click(object sender, EventArgs e)
+        {
+            frmMaterialReports materialReports = new frmMaterialReports(Program.GetService<IMediator>()); 
+            frmReportViewer reportViewer = new frmReportViewer(this, materialReports);
+            reportViewer.Show();
         }
     }
 }
