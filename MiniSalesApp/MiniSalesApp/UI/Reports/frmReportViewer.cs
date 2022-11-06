@@ -23,7 +23,7 @@ namespace MiniSalesApp.UI.Reports
         public XtraReport Report 
         {   get 
             {
-                if (_reportQuery.Report is not null)
+                if (_reportQuery is not null && _reportQuery.Report is not null)
                 {
                     this.Text = (_reportQuery.Report as rptMasterReport).ReportTitle;
                     return _reportQuery.Report;
